@@ -1,6 +1,11 @@
 [
    {
       "type":"a",
+      "name":"ps3-meta.rockband.com",
+      "value":"78.141.231.152"
+   },
+   {
+      "type":"a",
       "name":"rb3ps3live.hmxservices.com",
       "value":"78.141.231.152"
    },
