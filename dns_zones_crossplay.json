@@ -6,6 +6,11 @@
    },
    {
       "type":"a",
+      "name":"rb2ps3live.hmxservices.com",
+      "value":"78.141.231.152"
+   },
+   {
+      "type":"a",
       "name":"rb3wiilive.hmxservices.com",
       "value":"78.141.231.152"
    },
