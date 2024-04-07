@@ -53,11 +53,11 @@ def query_yes_no(question, default="yes"):
             sys.stdout.write("Please respond with 'yes' or 'no' " "(or 'y' or 'n').\n")
 
 GOCENTRALDNS_VERSION = "1.3"
-CROSSPLAY = False
+CROSSPLAY = True
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
-get_zones = requests.get("https://raw.githubusercontent.com/qfoxb/GoCentral-DNS/master/dns_zones.json")
+get_zones = requests.get("https://raw.githubusercontent.com/knvtva/GoCentral-DNS/master/dns_zones_crossplay.json")
 def get_ip():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
@@ -89,7 +89,7 @@ print("Need help? Open a GitHub issue.\n")
 if query_yes_no("Would you like to enable PS3 and Wii Crossplay?"):
     prGreen("Enabling crossplay!")
     CROSSPLAY = True
-    crossplay_zones = requests.get("https://raw.githubusercontent.com/qfoxb/GoCentral-DNS/master/dns_zones_crossplay.json")
+    crossplay_zones = requests.get("https://raw.githubusercontent.com/knvtva/GoCentral-DNS/master/dns_zones_crossplay.json")
 
 print("--- Starting up ---")
 
